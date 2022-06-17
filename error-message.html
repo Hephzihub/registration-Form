@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <style>
+            form input:invalid, form input:invalid + form .inputwrapper img, form input:invalid + form .inputwrapper span {
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="content">
+                <h1>Learn to code by watching others</h1>
+                <p>See how experienced developers solve problems in real-time. watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+            </div>
+            <div class="form">
+                <div class="offer">
+                    <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+                </div>
+                <form>
+                    <div class="inputwrapper">
+                        <input id="fname" type="text" placeholder="First Name" required />
+                        <img src="images/icon-error.svg" alt="error">
+                        <span>First Name cannot be empty</span>
+                    </div>
+                    
+                    <div class="inputwrapper">
+                        <input id="lname" type="text" placeholder="Last Name" required />
+                        <img src="images/icon-error.svg" alt="error">
+                        <span>Second Name cannot be empty</span>
+                    </div>
+                    
+                    <div class="inputwrapper">
+                        <input id="email" type="email" placeholder="Email Address" required />
+                        <img src="images/icon-error.svg" alt="error">
+                        <span>Looks like this is not an email</span>
+                    </div>
+                    
+                    <div class="inputwrapper">
+                        <input id="password" type="password" placeholder="Password" required />
+                        <img src="images/icon-error.svg" alt="error">
+                        <span>Password cannot be empty</span>
+                    </div>
+                    
+
+                    <button type="submit" class="btn">CLAIM YOUR FREE TRIAL</button>
+                    <div class="termswrapper">
+                        <p>By clicking the button you are agreeing to <a class="terms" href="#">Terms and Services</a></p>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <div class="code-view">
+            <a href="index.html">inactive form</a>
+        </div>
+    </body>
+</html>
